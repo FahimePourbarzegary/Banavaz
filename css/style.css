@@ -14,10 +14,16 @@
   --color-primary-light: #53b9d9;
   --color-white: #ffff;
   --color-heading: #ffff;
+  --color-background: linear-gradient(
+    243.02deg,
+    #10a9da -9.92%,
+    #92e5ff 106.28%
+  );
 }
 /*Body*/
 html {
   font-size: 62.5%;
+  background: var(--color-background);
 }
 body {
   color: var(--color-body);
@@ -55,5 +61,35 @@ h4 {
   }
   h4 {
     font-size: 5.4rem;
+  }
+}
+/*Button */
+.btn {
+  outline: 0;
+  border: 0;
+  padding: 0.8rem 2.8rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 3px solid #ffff;
+}
+
+.btn--block {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 3.2rem;
   }
 }
