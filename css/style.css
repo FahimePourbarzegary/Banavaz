@@ -1,0 +1,59 @@
+/*Restart*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/*Variable in root*/
+:root {
+  --color-primary-dark: #0e5d80;
+  --color-primary-medium: #5bb1cc;
+  --color-primary-light: #53b9d9;
+  --color-white: #ffff;
+  --color-heading: #ffff;
+}
+/*Body*/
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 3.6rem;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 6.4rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 6.4rem;
+  }
+  h4 {
+    font-size: 5.4rem;
+  }
+}
