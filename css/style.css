@@ -38,6 +38,7 @@ h3 {
 h1,
 h2 {
   font-size: 3.2rem;
+  margin-bottom: 1.4rem;
 }
 h3 {
   font-size: 2rem;
@@ -51,6 +52,7 @@ h4 {
   }
   h1 {
     font-size: 9rem;
+    margin-bottom: 2.5rem;
   }
   h2 {
     font-size: 6.4rem;
@@ -101,11 +103,11 @@ h4 {
 }
 /*Block*/
 .block {
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 2rem;
 }
 @media screen and (min-width: 1024px) {
   .block {
-    padding: 3rem 1rem;
+    padding: 3rem 5rem;
   }
 }
 /*Header-navbar*/
@@ -222,5 +224,60 @@ h4 {
   }
   .nav__toggler {
     display: none;
+  }
+}
+/*Hero*/
+.hero {
+  display: grid;
+}
+.hero__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 6rem 2rem;
+}
+.hero__img-home {
+  width: 27rem;
+}
+.hero__img-mobile {
+  position: absolute;
+  width: 13rem;
+  left: 18rem;
+  top: 2rem;
+}
+.hero__detail {
+  color: var(--color-white);
+}
+.hero__detail .btn {
+  margin-top: 1rem;
+  background-color: var(--color-white);
+  color: var(--color-primary-medium);
+  width: 13.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero__detail {
+    grid-column: 1 / span 2;
+    order: 1;
+  }
+  .hero__images {
+    order: 2;
+  }
+  .hero__img-home {
+    width: 44rem;
+  }
+  .hero__img-mobile {
+    width: 22rem;
+    left: 2rem;
+    top: -2rem;
+  }
+  .hero__detail .btn {
+    margin-top: 6rem;
+    color: var(--color-primary-light);
+    width: 27.6rem;
   }
 }
