@@ -62,7 +62,7 @@ h4 {
     font-size: 6.4rem;
   }
   h4 {
-    font-size: 5.4rem;
+    font-size: 3.6rem;
   }
 }
 /*Button */
@@ -326,4 +326,24 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+/*Detail section*/
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+}
+.detail__detail {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .detail {
+    flex-direction: column-reverse;
+  }
+  .detail__image {
+    width: 75rem;
+    margin-top: 6rem;
+  }
 }
