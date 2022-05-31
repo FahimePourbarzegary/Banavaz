@@ -452,3 +452,39 @@ h4 {
     margin-right: 8rem;
   }
 }
+/*Friends*/
+.friends__detail {
+  margin-bottom: 3rem;
+}
+.friends__detail h2 {
+  color: var(--color-primary-dark);
+  font-size: 2rem;
+}
+.friends__detail p {
+  color: #474747;
+  font-size: 1.8rem;
+}
+.friends__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .friends {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #ffff;
+  }
+  .friends__detail {
+    grid-column: 1 / span 2;
+  }
+  .friends__detail h2 {
+    font-size: 6.4rem;
+  }
+  .friends__detail p {
+    font-size: 3.6rem;
+  }
+  .friends__img img {
+    width: 45rem;
+  }
+}
