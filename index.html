@@ -1,20 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="/css/style.css">
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Banavaz</title>
-</head>
-<body>
-  
-<h1>سلام</h1>
-<h2>سلام</h2>
-<h3>سلام</h3>
-<h4>سلام</h4>
-<h5>سلام</h5>
-<h6>سلام</h6>
-</body>
+  </head>
+  <body>
+    <header class="Header">
+      <nav class="nav block">
+        <a href="#" class="nav__logo"
+          ><img src="/assets/images/Logo.svg" alt="logo"
+        /></a>
+        <div class="nav__mobile">
+          <div class="btn btn--primary btn--block hidden-desk">
+            فروشگاه بانواز
+          </div>
+          <div class="nav__toggler">
+            <div class="bar bar-one"></div>
+            <div class="bar bar-two"></div>
+            <div class="bar bar-three"></div>
+          </div>
+        </div>
+
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="#">خانه</a></li>
+          <li class="nav__item"><a href="#">فروشگاه</a></li>
+          <li class="nav__item"><a href="#">درباره ما</a></li>
+        </ul>
+
+        <div class="nav__btn">
+          <div class="btn btn--primary btn--block hidden-mobile">
+            ورود به داشبورد
+          </div>
+          <div class="btn btn--secondary btn--block hidden-mobile">
+            دانلود اپلیکیشن
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="hero block">
+        <div class="hero__images">
+          <img
+            src="/assets/images/Home.svg"
+            alt="Homeimage"
+            class="hero__img-home"
+          />
+          <img
+            src="/assets/images/iPhone-12-Mini.svg"
+            alt="mobile"
+            class="hero__img-mobile"
+          />
+        </div>
+        <div class="hero__detail">
+          <h1>خیالت از خونه راحت!</h1>
+          <p>
+            بانواز واژه‌ای کردی به معنای باخبر ساختن با صدای بلند است. درست مثل
+            بانواز!!
+          </p>
+          <p>با سنسورهای بانواز از هیچ اتفاقی بی خبر نیستی.</p>
+          <p>چه خونه باشی چه نه.</p>
+          <div class="btn btn--primary btn--block">فروشگاه بانواز</div>
+        </div>
+      </div>
+    </section>
+    <section class="categories block">
+      <div class="item">
+        <div class="item__container">
+          <img src="/assets/images/category/door.svg" alt="categry-image" />
+        </div>
+        <p>درب و پنجره</p>
+      </div>
+      <div class="item">
+        <div class="item__container">
+          <img src="/assets/images/category/flower.svg" alt="categry-image" />
+        </div>
+        <p>گل و گیاه</p>
+      </div>
+      <div class="item">
+        <div class="item__container">
+          <img src="/assets/images/category/plug.svg" alt="categry-image" />
+        </div>
+        <p>وسایل برقی</p>
+      </div>
+      <div class="item">
+        <div class="item__container">
+          <img src="/assets/images/category/lamp.svg" alt="categry-image" />
+        </div>
+        <p>روشنایی</p>
+      </div>
+      <div class="item">
+        <div class="item__container">
+          <img src="/assets/images/category/warm.svg" alt="categry-image" />
+        </div>
+        <p>گرمایی</p>
+      </div>
+      <div class="item">
+        <div class="item__container">
+          <img src="/assets/images/category/animal.svg" alt="categry-image" />
+        </div>
+        <p>حیوانات</p>
+      </div>
+    </section>
+    <section class="detail block">
+      <div>
+        <img
+          src="/assets/images/device.svg"
+          alt="device"
+          class="detail__image"
+        />
+      </div>
+      <div class="detail__detail">
+        <div><h2>مدیریت با دستگاه مرکزی</h2></div>
+        <div>
+          <p>
+            بانواز برای مدیریت و کنترل سنسورهای خودش از یک دستگاه مرکزی استفاده
+            میکنه که همه چیز تحت کنترل همین دستگاه مرکزیه. دستگاه به کمک اینترنت
+            به گوشی شما متصل میشه و شما میتونین همه چیز رو تحت کنترل خودتون
+            بگیرین.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="feature-section">
+      <div class="feature">
+        <div class="feature__img">
+          <img src="/assets/images/baby1.svg" alt="baby" />
+        </div>
+        <div class="feature__detail">
+          <h4>دارای تنظیمات مخصوص کودک</h4>
+          <p>نگران تغییر تنظیمات بانواز توسط فرزند عزیزت نباش!</p>
+          <div>
+            <a href="#" class="btn btn--primary btn--block">فروشگاه بانواز</a>
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__img mobile">
+          <img src="/assets/images/iphone1.svg" alt="baby" />
+        </div>
+        <div class="feature__detail">
+          <h4>مدیریت خانه روی گوشی!</h4>
+          <p>
+            با دانلود اپلیکیشن بانواز میتونی تمامی سنسورها رو روی گوشیت مشاهده و
+            کنترل کنی
+          </p>
+          <div>
+            <a href="#" class="btn btn--secondary btn--block">فروشگاه بانواز</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ability-section">
+      <div class="abilities__header"><h2>قابلیت های ویژه بانواز</h2></div>
+      <div class="abilities">
+        <div class="ability">
+          <div class="ability__img">
+            <img src="/assets/images/cat.svg" alt="cat" />
+          </div>
+          <a href="#"
+            ><p class="ability__detail">
+              سنسورهایی که برای حیوان های خانگی شما نصب میشن میتونن با هوش
+              مصنوعی گرسنه بودن اون رو تشخیص بدن!
+            </p></a
+          >
+        </div>
+        <div class="ability">
+          <div class="ability__img">
+            <img src="/assets/images/flower.svg" alt="cat" />
+          </div>
+          <a href="#">
+            <p class="ability__detail">
+              با محاسبه حرارت اطراف خاک گیاهان میشه فهمید کی باید دوباره به گیاه
+              ها آب بدی!
+            </p></a
+          >
+        </div>
+        <div class="ability">
+          <div class="ability__img">
+            <img src="/assets/images/laptop.svg" alt="cat" />
+          </div>
+          <a href="#"
+            ><p class="ability__detail">
+              میتونی مدت زمان روشن بودن دستگاه های الکتریکی رو کنترل کنی. یا حتی
+              برای روشن بودن اونها از بانواز کمک بگیری.
+            </p></a
+          >
+        </div>
+        <div class="ability">
+          <div class="ability__img">
+            <img src="/assets/images/door.svg" alt="cat" />
+          </div>
+          <a href="#"
+            ><p class="ability__detail">
+              باز و بسته شدن درب ها و پنجره ها، تشخیص حضور انسان و کلی قابلیت
+              دیگه در سنسور های بانواز!
+            </p></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="friends block">
+      <div class="friends__detail">
+        <h2>رفقای بانواز</h2>
+        <p>ما افتخار همکاری با بیش از ده ها شرکت رو در بانواز داریم.</p>
+      </div>
+      <div class="friends__img">
+        <img src="/assets/images/Logos.svg" alt="friends-logo" />
+      </div>
+    </section>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
