@@ -408,3 +408,47 @@ h4 {
     height: 47rem;
   }
 }
+/*Ability*/
+.abilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.3rem;
+  position: relative;
+  margin-top: 3rem;
+}
+.ability {
+  margin-bottom: 1.5rem;
+}
+.ability__detail {
+  width: 16rem;
+  color: #474747;
+}
+.abilities__header {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .abilities {
+    padding: 4.5rem;
+    height: 50rem;
+    font-size: 2rem;
+  }
+  .ability-section {
+    background: #7edcf9;
+    position: relative;
+  }
+  .ability__img img {
+    width: 24rem;
+  }
+  .ability__detail {
+    width: 25rem;
+  }
+  .abilities__header {
+    display: inline;
+    width: 100%;
+    color: var(--color-primary-dark);
+  }
+  .abilities__header h2 {
+    margin-right: 8rem;
+  }
+}
