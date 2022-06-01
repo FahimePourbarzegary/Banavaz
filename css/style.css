@@ -488,3 +488,105 @@ h4 {
     width: 45rem;
   }
 }
+/*Footer*/
+.footer {
+  display: grid;
+  grid-template-areas:
+    "home  shop"
+    "contact app"
+    "social social";
+  gap: 6rem;
+  color: var(--color-white);
+  background-color: #146183;
+  height: 58rem;
+}
+.footer a {
+  color: var(--color-white);
+  font-size: 1.6rem;
+}
+.footer h5 {
+  font-size: 2rem;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer ul li {
+  padding: 0.5rem 0rem;
+}
+.footer__style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer__home {
+  grid-area: home;
+}
+.footer__shop {
+  grid-area: shop;
+}
+.footer__app {
+  grid-area: app;
+}
+
+.footer__social {
+  grid-area: social;
+
+  align-items: center;
+}
+.footer__contact {
+  grid-area: contact;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.212);
+}
+.footer__social p {
+  color: #d9dbe1;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    background: linear-gradient(
+      97.01deg,
+      #53b9d9 -6.41%,
+      rgba(20, 77, 101, 0) 110.43%
+    );
+    grid-template-areas:
+      "home shop contact app"
+      "social social social social";
+  }
+  .footer__style {
+    justify-content: unset;
+  }
+  .footer ul li {
+    padding: 0rem;
+  }
+  .footer__social {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__social p {
+    font-size: 1.8rem;
+  }
+  .icon-app {
+    margin-top: 3rem;
+  }
+  .social {
+    justify-content: space-around;
+    width: 40%;
+    padding: 0rem 0rem 0rem 8rem;
+    font-size: 2rem;
+  }
+}
