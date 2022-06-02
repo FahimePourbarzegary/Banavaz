@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Banavaz</title>
   </head>
   <body>
@@ -74,7 +75,7 @@
         </div>
       </div>
     </section>
-    <section class="categories block">
+    <section class="categories block" data-aos="fade-up">
       <div class="item">
         <div class="item__container">
           <img src="/assets/images/category/door.svg" alt="categry-image" />
@@ -112,7 +113,7 @@
         <p>حیوانات</p>
       </div>
     </section>
-    <section class="detail block">
+    <section class="detail block" data-aos="fade-up">
       <div>
         <img
           src="/assets/images/device.svg"
@@ -132,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="feature-section">
+    <section class="feature-section" data-aos="fade-up">
       <div class="feature">
         <div class="feature__img">
           <img src="/assets/images/baby1.svg" alt="baby" />
@@ -161,7 +162,7 @@
         </div>
       </div>
     </section>
-    <section class="ability-section">
+    <section class="ability-section" data-aos="fade-up">
       <div class="abilities__header"><h2>قابلیت های ویژه بانواز</h2></div>
       <div class="abilities">
         <div class="ability">
@@ -210,7 +211,7 @@
         </div>
       </div>
     </section>
-    <section class="friends block">
+    <section class="friends block" data-aos="fade-up">
       <div class="friends__detail">
         <h2>رفقای بانواز</h2>
         <p>ما افتخار همکاری با بیش از ده ها شرکت رو در بانواز داریم.</p>
@@ -219,7 +220,7 @@
         <img src="/assets/images/Logos.svg" alt="friends-logo" />
       </div>
     </section>
-    <footer class="footer block">
+    <footer class="footer block" data-aos="fade-up">
       <div class="footer__home footer__style">
         <h5>بانواز</h5>
         <ul>
@@ -271,5 +272,9 @@
       </div>
     </footer>
     <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
