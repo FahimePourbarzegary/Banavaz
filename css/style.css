@@ -76,6 +76,7 @@ h4 {
   white-space: nowrap;
   font-size: 1.8rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .btn--primary {
   background-color: var(--color-primary-dark);
@@ -133,6 +134,7 @@ h4 {
 }
 .nav__item > a {
   color: var(--color-white);
+  transition: all 0.4s ease-in;
 }
 .nav__item {
   margin-top: 1.5rem;
@@ -155,7 +157,7 @@ h4 {
   width: 70%;
 }
 .nav__item > a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 .nav__item.calltoaction > a {
   color: #f5f5f5;
@@ -212,6 +214,11 @@ h4 {
   }
   .nav__btn .btn {
     margin-right: 4rem;
+    transition: all 0.4s ease-out;
+  }
+  .nav__btn .btn:hover {
+    color: var(--color-primary-medium);
+    background-color: var(--color-white);
   }
   .nav__item {
     margin-right: 1rem;
@@ -256,6 +263,12 @@ h4 {
   background-color: var(--color-white);
   color: var(--color-primary-medium);
   width: 13.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.hero__detail .btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 @media screen and (min-width: 1024px) {
   .hero {
@@ -293,6 +306,7 @@ h4 {
   font-weight: 500;
   margin-bottom: 2rem;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 .item__container {
   display: flex;
@@ -374,10 +388,20 @@ h4 {
   background-color: var(--color-primary-medium);
   padding: 0.4rem 1rem;
 }
+.feature__detail .btn--primary:hover {
+  background-color: transparent;
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
+}
 .feature__detail .btn--secondary {
   color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
   padding: 0.3rem 0.9rem;
+}
+.feature__detail .btn--secondary:hover {
+  background-color: var(--color-primary-medium);
+  color: var(--color-white);
+  border-color: var(--color-primary-medium);
 }
 .feature__detail h4 {
   color: var(--color-primary-dark);
@@ -419,6 +443,10 @@ h4 {
 }
 .ability {
   margin-bottom: 1.5rem;
+  transition: all 0.4 ease-in;
+}
+.ability:hover {
+  transform: scale(1.05);
 }
 .ability__detail {
   width: 16rem;
@@ -426,6 +454,9 @@ h4 {
 }
 .abilities__header {
   display: none;
+}
+.ability__detail:hover {
+  color: var(--color-primary-dark);
 }
 @media screen and (min-width: 1024px) {
   .abilities {
