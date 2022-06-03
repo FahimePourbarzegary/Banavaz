@@ -536,8 +536,9 @@ h4 {
   font-size: 1.6rem;
   transition: all 0.4s ease-in-out;
 }
+
 .footer a:hover {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-light);
 }
 .footer h5 {
   font-size: 2rem;
@@ -578,9 +579,7 @@ h4 {
   justify-content: space-evenly;
   width: 50%;
 }
-.social span:hover {
-  color: var(--color-primary-dark);
-}
+
 .icon {
   display: flex;
   justify-content: center;
@@ -594,8 +593,8 @@ h4 {
 .footer__social p {
   color: #d9dbe1;
 }
-.footer__social p:hover {
-  color: var(--color-primary-dark);
+.social span:hover {
+  color: var(--color-primary-light);
 }
 @media screen and (min-width: 1024px) {
   .footer {
@@ -607,6 +606,9 @@ h4 {
     grid-template-areas:
       "home shop contact app"
       "social social social social";
+  }
+  .footer a:hover {
+    color: var(--color-primary-dark);
   }
   .footer__style {
     justify-content: unset;
@@ -629,5 +631,8 @@ h4 {
     width: 40%;
     padding: 0rem 0rem 0rem 8rem;
     font-size: 2rem;
+  }
+  .social span:hover {
+    color: var(--color-primary-dark);
   }
 }
