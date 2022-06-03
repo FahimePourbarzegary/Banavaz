@@ -534,6 +534,10 @@ h4 {
 .footer a {
   color: var(--color-white);
   font-size: 1.6rem;
+  transition: all 0.4s ease-in-out;
+}
+.footer a:hover {
+  color: var(--color-primary-dark);
 }
 .footer h5 {
   font-size: 2rem;
@@ -562,7 +566,6 @@ h4 {
 
 .footer__social {
   grid-area: social;
-
   align-items: center;
 }
 .footer__contact {
@@ -575,6 +578,9 @@ h4 {
   justify-content: space-evenly;
   width: 50%;
 }
+.social span:hover {
+  color: var(--color-primary-dark);
+}
 .icon {
   display: flex;
   justify-content: center;
@@ -583,9 +589,13 @@ h4 {
   height: 3.2rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.212);
+  cursor: pointer;
 }
 .footer__social p {
   color: #d9dbe1;
+}
+.footer__social p:hover {
+  color: var(--color-primary-dark);
 }
 @media screen and (min-width: 1024px) {
   .footer {
